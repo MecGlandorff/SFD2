@@ -1,0 +1,10 @@
+
+data_paths:
+  train_segmented: 'data/train_segmented.csv'
+  meta_train_clean: 'data/meta_train_clean.csv'
+  # + more?
+
+# Probability threshold for vertebrae detection
+threshold: 0.5 
+
+output_dir: 'output/'

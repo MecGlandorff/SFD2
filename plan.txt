@@ -1,0 +1,32 @@
+
+Program: Vertibrae c1-c7 fracture detection.
+
+Support program: Which vertebrae is in which C T SLIDES
+Architecture idea for support program:
+-Module data ingestion & preprocessing (data_handling)
+-Module Vertebrae detection (vertebrae_detector)
+-Module Sequence Generator & output (Seq_output): collects and gives as outputs data per vertebrae
+-Optional module(errors) if running into issues for debugging
+-Main module
+Architecture of this support program:
+project_root/
+/data/
+..train_segmented.csv etc.
+/ output/
+.. detection_results.csv
+..sequences.json
+/ data_handling.py
+/ vertebrae_detector.py
+/ seq_output.py
+/ errors.py
+/ main.py
+/ config.yaml
+.. slice_detector.log
+
+
+Steps of action ( * taken & // planned)
+Project 1, detecting which vertebrae are in the slides
+STATUS FINISHED!
+
+Project 2, 
+actually detecting fractures from CT slides
